@@ -5,7 +5,7 @@ services:
     volumes:
       - ./go/:/go
     ports:
-      - "2000:8080"
+      - "8080:8080"
     tty: true
     environment:
       - "GOPATH=/app"
