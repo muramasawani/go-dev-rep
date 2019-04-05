@@ -4,8 +4,8 @@ services:
     image: golang:latest
     volumes:
       - ./go/:/go
-    ports:
-      - "2000:8080"
+   # ports:
+     # - "2000:8080"
     tty: true
     environment:
       - "GOPATH=/app"
