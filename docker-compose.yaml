@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    image: golang:latest
+    volumes:
+      - ./go/:/go
+    ports:
+      - "2000:8080"
+    tty: true
+    environment:
+      - "GOPATH=/app"
