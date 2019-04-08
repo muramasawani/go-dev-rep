@@ -3,7 +3,7 @@ services:
   app:
     image: golang:latest
     volumes:
-      - ./go/:/go
+      - ./go/app/:/app
     ports:
       - "8080:8080"
     tty: true
